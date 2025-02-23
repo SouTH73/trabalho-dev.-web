@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <title>Sistema de Atividades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img id="logotipo" src="img/Logotipo_UEMG.png" alt="Logo da Escola">
+            <h1>Sistema de Registro de Atividades</h1>
+        </header>
+        <form id="formularioAtividade">
+            <label for="descricao">Descrição da Atividade:</label>
+            <textarea id="descricao" required></textarea>
+
+            <label for="categoria">Categoria da Atividade:</label>
+            <select id="categoria" required>
+                <option value="">Selecione uma categoria</option>
+                <option value="Extensão">Extensão</option>
+                <option value="Ensino">Ensino</option>
+                <option value="Pesquisa">Pesquisa</option>
+            </select>
+
+            <label for="tipo">Tipo Específico da Atividade:</label>
+            <select id="tipo" required disabled>
+                <option value="">Selecione um tipo</option>
+            </select>
+
+            <label for="horas">Total de Horas da Atividade:</label>
+            <input type="number" id="horas" required>
+
+            <button type="submit">Registrar Atividade</button>
+        </form>
+
+        <div id="resumo">
+            <h2>Resumo das Atividades</h2>
+            <div id="conteudoResumo"></div>
+        </div>
+
+        <!-- Botão para limpar dados -->
+        <button id="limparDados" class="clear-button">Limpar Dados</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
