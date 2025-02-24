@@ -6,9 +6,11 @@ Bem-vindo ao sistema de registro de atividades acadêmicas!  Este projeto permi
 
 - HTML, CSS e JavaScript
 
-- Firebase (Firestore e Hosting)
+- Firebase (Firestore)
 
 - Google Fonts (Poppins)
+
+- Vercel (Hosting)
 
 ## - O que você precisa antes de começar?
 
