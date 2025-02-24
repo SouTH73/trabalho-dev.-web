@@ -55,39 +55,9 @@ Bem-vindo ao sistema de registro de atividades acadêmicas!  Este projeto permi
      
    - O sistema estará disponível no navegador em `http://localhost:5000`.
 
-## Como Disponibilizar Online (Deploy no Firebase Hosting)
-
-Se quiser que o sistema fique acessível pela internet, siga estes passos:
-
-1. Configure o Firebase no projeto
-
-   
-   firebase init
-   
-
-   Escolha a opção "Hosting".
-
-   Selecione o projeto Firebase já criado.
-
-   Defina `public` como diretório de implantação (ou `build`, dependendo do setup).
-
-   Escolha `Yes` para criar um `index.html` caso necessário.
-
-2. **Realize o deploy para colocar o sistema no ar**
-
-   
-   firebase deploy
-  
-
-3. Acesse o link gerado
-
-   O Firebase fornecerá uma URL como `https://seu-projeto.web.app/`.
-
-   Compartilhe esse link para que outras pessoas acessem o sistema!
-
 ## Como Usar o Sistema
 
-1. Acesse o sistema pelo navegador (`http://localhost:5000` ou pelo link do Firebase Hosting).
+1. Acesse o sistema pelo navegador (`http://localhost:5000`).
 2. Registre uma atividade preenchendo o formulário e clicando em "Registrar Atividade".
 3. Visualize as atividades cadastradas no resumo.
 4. Exclua atividades clicando no botão "Excluir" ao lado de cada uma.
